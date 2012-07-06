@@ -4,6 +4,8 @@ Every since I heard that Steam and Github for Windows were using Embedded Chromi
 
 Basically the idea is to create an app in Python using bottle.py and use cefpython as the frame for the gui. A sort of open source Adobe Air type desktop platform. Now the gui itself could be bottle serving both json and template and using javascript to load the data or using Python for everything. Still considering which direction to go.
 
+The strangest part of the app is how the bottle server gets shut down. It serves it's own PID so the browser part can grab it to shut it down before the browser shuts down.
+
 And cefpython is supposed to have a major update next week, so kind of waiting on that to see what I can do then.
 
 This runs on windows only currently, but if you are handy compiling C (I try to stay away from it myself), you can compile the cefpython project on your OS and the rest should work. 
