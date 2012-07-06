@@ -19,8 +19,12 @@ After cloning this repository:
 
     git clone https://github.com/eristoddle/CefBottleDesktop.git
 
-Move into the lib directory: 
+Update the submodules: 
 
     cd CefBottleDesktop
-    cd lib
+    git submodule init
+    git submodule update
+
+Everything should be ready to run. launch.py uses python.exe and launch.pyw uses pythonw.exe if you don't want a console hanging around. Now to build an app, just add more to the bottleserver.py file or even get crazy and add templates and the like. Pretty simple to figure out.
+
 
