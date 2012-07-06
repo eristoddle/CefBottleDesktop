@@ -13,7 +13,7 @@ def index(name='World'):
     return welcome + '<br/><a href="/pid/">pid</a>'
 
 @route('/pid/')
-def pid(name='World'):
+def pid():
     return str(os.getpid())
 
 if __name__ == "__main__":
